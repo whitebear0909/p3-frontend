@@ -80,7 +80,7 @@ export default function Challenge() {
   return (
     <ThemeProvider theme={themes[currentTheme]}>
       <Flex sx={{ justifyContent: "center", maxWidth: "850px", margin: "64px auto" }}>
-        <Box sx={{ width: "33%" }} >
+        <Box sx={{ width: "40%" }} >
           <Card sx={{ p: 4 }}>
             <Heading as="h1">
               Welcome back, Human!
@@ -99,10 +99,11 @@ export default function Challenge() {
             <Heading as="h5" mt={4} mb={2}>Theme switcher</Heading>
             <Button onClick={() => setCurrentTheme("modern")}>Modern</Button>
             <Button onClick={() => setCurrentTheme("nineties")} ml={2}>90s</Button>
+            <Button onClick={() => setCurrentTheme("dark")} ml={2}>Dark</Button>
           </Card>
         </Box>
 
-        <Box sx={{ width: "66%" }}>
+        <Box sx={{ width: "60%" }}>
           {
             tweets.map((item, i) => {
               return renderTweet(item, i)

@@ -4,8 +4,10 @@ import base from "./base"
 const modern: Theme = merge(base, {
   buttons: {
     primary: {
+      cursor: "pointer"
     },
     secondary: {
+      cursor: "pointer"
     }
   },
   colors: {

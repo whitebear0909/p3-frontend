@@ -4,55 +4,46 @@ import base from "./base"
 // Use this gradient
 // linear-gradient(30deg, rgba(231,152,89,0.95) 20%, rgba(214,83,206,1) 80%)
 
-const nineties: Theme = merge(base, {
+const dark: Theme = merge(base, {
   fonts: {
-    body: '"Comic Sans MS", serif',
-    heading: '"Righteous", cursive',
+    body: '"BlinkMacSystemFont"',
+    heading: '"Helvetica Neue"',
     monospace: 'Menlo, monospace',
   },
   colors: {
     text: "white",
-    background: "rgb(48, 42, 140)",
-    secondary: "rgb(242, 239, 143)"
+    background: "#1e1c1c",
+    secondary: "white"
   },
   buttons: {
     primary: {
       fontFamily: "inherit",
       color: "white",
-      borderRadius: "0",
+      borderRadius: 8,
       textTransform: "uppercase",
-      bg: "hotpink",
+      bg: "#1c304e",
       transition: "background 100ms ease-in-out",
       "&:hover": {
-        bg: "pink",
+        bg: "#305fa5",
         color: "black"
       },
       cursor: "pointer"
     },
-    secondary: {
-      color: "purple",
-      bg: "purple",
-      "&:hover": {
-        color: "purple"
-      },
-      cursor: "pointer"
-    }
   },
   cards: {
     primary: {
-      // backgroundColor: "rgba(1, 1, 1, 0.1)",
-      // background: "linear-gradient(30deg, rgba(240,244,16,1) 0%, rgba(214,83,206,1) 100%)",
-      background: "linear-gradient(30deg, rgba(231,152,89,0.95) 20%, rgba(214,83,206,1) 80%)",
+      background: "#060606",
+      borderRadius: 8,
     }
   },
   forms: {
     input: {
       fontFamily: "body",
-      borderRadius: 0,
       backgroundColor: "secondary",
       border: "transparent",
-      color: "gray",
-      outlineColor: "secondary"
+      color: "black",
+      outlineColor: "secondary",
+      borderRadius: 8
     }
   },
   text: {
@@ -62,4 +53,4 @@ const nineties: Theme = merge(base, {
   }
 })
 
-export default nineties
+export default dark
